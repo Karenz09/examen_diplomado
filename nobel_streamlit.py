@@ -22,7 +22,7 @@ def user_input_features():
 df = user_input_features()
 
 nobel =  pd.read_csv('nobel_final.csv', encoding='latin-1')
-X = nobel.Text
+X = nobel.Motivation
 y = nobel.Label
 
 vect = CountVectorizer()
